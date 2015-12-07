@@ -10,6 +10,7 @@ namespace GitTestProject
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("This code is only for branch.");
         }
     }
 }
