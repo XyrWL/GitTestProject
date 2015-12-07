@@ -4,14 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbstractExample
+namespace Djur
 {
     class Cat : Animal
     {
         string djur = "Katt";
         public override void PrintInfo()
         {
-            Console.WriteLine(djur + " " + Name);
+            Console.WriteLine($"djur:{djur}, Name:{Name}");
+        }
+        public override string ToString()
+        {
+            return $"djur:{djur}, {base.ToString()}";
         }
     }
 }
