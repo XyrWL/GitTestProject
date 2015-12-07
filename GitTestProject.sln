@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitTestProject", "GitTestPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Djur", "AbstractExample\Djur.csproj", "{64C0E509-2884-4B4D-8655-D722999BD82E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{2784A802-84A4-4543-AFC4-59D4AC622896}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{64C0E509-2884-4B4D-8655-D722999BD82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64C0E509-2884-4B4D-8655-D722999BD82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64C0E509-2884-4B4D-8655-D722999BD82E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2784A802-84A4-4543-AFC4-59D4AC622896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2784A802-84A4-4543-AFC4-59D4AC622896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2784A802-84A4-4543-AFC4-59D4AC622896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2784A802-84A4-4543-AFC4-59D4AC622896}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
