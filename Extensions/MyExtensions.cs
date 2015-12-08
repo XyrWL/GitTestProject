@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Extensions
 {
-    public static class MyStringExtension
+    public static class MyExtensions
     {
         public static string Dotify(this string text) //this string : extends string
         {
@@ -15,6 +15,12 @@ namespace Extensions
                 return result + '.';
             else
                 return result;
+        }
+
+        public static int Quad(this Bottle bottle)
+        {
+            bottle.DoubleSize();
+            return bottle.DoubleSize();
         }
     }
 }

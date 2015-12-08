@@ -10,9 +10,15 @@ namespace Extensions
     {
         static void Main(string[] args)
         {
-            var name = MyStringExtension.Dotify("Hej");
+            var name = MyExtensions.Dotify("Hej");
             Console.WriteLine(name);
-            Console.WriteLine("Kalle".Dotify());            
+            Console.WriteLine("Kalle".Dotify());
+
+            Bottle myBottle = new Bottle() { Size = 10 };
+
+            Console.WriteLine(myBottle.DoubleSize());
+            Console.WriteLine(myBottle.Quad());
+            Console.WriteLine(MyExtensions.Quad(myBottle));
         }
     }
 }
