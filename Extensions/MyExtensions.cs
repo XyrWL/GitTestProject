@@ -10,17 +10,19 @@ namespace Extensions
     {
         public static string Dotify(this string text) //this string : extends string
         {
-            string result = text.Trim(); //avoid direct changes on text
-            if (result[result.Length - 1] != '.')
-                return result + '.';
+            //string result = text.Trim(); //avoid direct changes on text ?            
+            text = text.Trim();
+            if (text[text.Length - 1] != '.')
+                return text + '.';
             else
-                return result;
+                return text;
         }
 
-        public static int Quad(this Bottle bottle)
+        public static Bottle Double(this Bottle bottle)
         {
-            bottle.DoubleSize();
-            return bottle.DoubleSize();
+            Bottle newBottle = new Bottle(bottle.Size);
+            bottle = newBottle;
+            return bottle;
         }
     }
 }

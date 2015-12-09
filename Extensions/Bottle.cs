@@ -8,7 +8,11 @@ namespace Extensions
 {
     public class Bottle
     {
-        private int Size { get; set; }
+        public Bottle(int size)
+        {
+            Size = size;
+        }
+        public int Size { get; private set; }
 
         public int DoubleSize()
         {

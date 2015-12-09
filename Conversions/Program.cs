@@ -19,7 +19,7 @@ namespace Conversions
             //Test with as:
             Cyckel cyckel = (Cyckel)new MC();
             MC mcTest = c1 as MC; //Attempts to convert c1 to an MC, if it fails it'll be null.
-            if (mcTest !=null)
+            if (mcTest != null)
             {
                 //Converted.
             }

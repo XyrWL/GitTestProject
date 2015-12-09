@@ -10,11 +10,14 @@ namespace Extensions
     {
         static void Main(string[] args)
         {
-            var name = MyExtensions.Dotify("Hej");
-            Console.WriteLine(name);
-            Console.WriteLine("Kalle".Dotify());
+            //var name = MyExtensions.Dotify("Hej");
+            //Console.WriteLine(name);
+            //Console.WriteLine("Kalle".Dotify());
+            string originalText = "Blah";
+            string newText = originalText.Dotify();
+            Console.WriteLine($"originalText:{originalText}, newText:{newText}");
 
-            Bottle myBottle = new Bottle() { Size = 10 };
+            Bottle myBottle = new Bottle(size : 10);
 
             Console.WriteLine(myBottle.DoubleSize());
             Console.WriteLine(myBottle.Quad());
