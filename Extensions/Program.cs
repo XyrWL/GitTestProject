@@ -16,12 +16,6 @@ namespace Extensions
             string originalText = "Blah";
             string newText = originalText.Dotify();
             Console.WriteLine($"originalText:{originalText}, newText:{newText}");
-
-            Bottle myBottle = new Bottle(size : 10);
-
-            Console.WriteLine(myBottle.DoubleSize());
-            Console.WriteLine(myBottle.Quad());
-            Console.WriteLine(MyExtensions.Quad(myBottle));
         }
     }
 }
