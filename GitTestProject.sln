@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casting", "Casting\Casting.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{C8639CD1-D8D4-4C73-9139-36F9BA6BFC62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{F44FD36F-7906-41DF-BF58-59BA218EC578}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{C8639CD1-D8D4-4C73-9139-36F9BA6BFC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8639CD1-D8D4-4C73-9139-36F9BA6BFC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8639CD1-D8D4-4C73-9139-36F9BA6BFC62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F44FD36F-7906-41DF-BF58-59BA218EC578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F44FD36F-7906-41DF-BF58-59BA218EC578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F44FD36F-7906-41DF-BF58-59BA218EC578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F44FD36F-7906-41DF-BF58-59BA218EC578}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
