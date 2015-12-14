@@ -50,6 +50,7 @@
     <Compile Include="IParentInterface.cs" />
     <Compile Include="ITvau.cs" />
     <Compile Include="MyClass.cs" />
+    <Compile Include="Poco.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

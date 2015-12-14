@@ -21,6 +21,28 @@ namespace Interfaces
             Program program = new Program();
             program.ChildMethod();
             program.ParentMethod();
+
+            var ettAndTvau = new ClassFromEttAndTvau();
+            IEtt ett = (IEtt)ettAndTvau;
+            ett.GoByBus();
+
+            var pocoList = new List<Poco>();
+            pocoList.Add(new Poco("A", 1, 5.2));
+            pocoList.Add(new Poco("B", 5, 3.1));
+            pocoList.Add(new Poco("C", 6, 5.4));
+            pocoList.Add(new Poco("D", 3, 6.7));
+            pocoList.Add(new Poco("E", 2, 2.2));
+            Console.WriteLine("Unsorted list:");
+            foreach (var poco in pocoList)
+            {
+                Console.WriteLine(poco);
+            }
+            Console.WriteLine("Sorted list:");
+            pocoList.Sort();
+            foreach (var poco in pocoList)
+            {
+                Console.WriteLine(poco);
+            }
         }
 
         public void ParentMethod()
