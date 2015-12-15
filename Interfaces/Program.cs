@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,12 +27,14 @@ namespace Interfaces
             IEtt ett = (IEtt)ettAndTvau;
             ett.GoByBus();
 
-            var pocoList = new List<Poco>();
-            pocoList.Add(new Poco("A", 1, 5.2));
-            pocoList.Add(new Poco("B", 5, 3.1));
-            pocoList.Add(new Poco("C", 6, 5.4));
-            pocoList.Add(new Poco("D", 3, 6.7));
-            pocoList.Add(new Poco("E", 2, 2.2));
+            var pocoList = new List<Poco>
+            {
+                new Poco("A", 1, 5.2),
+                new Poco("B", 5, 3.1),
+                new Poco("C", 6, 5.4),
+                new Poco("D", 3, 6.7),
+                new Poco("E", 2, 2.2)
+            };
             Console.WriteLine("Unsorted list:");
             foreach (var poco in pocoList)
             {
@@ -39,10 +42,8 @@ namespace Interfaces
             }
             Console.WriteLine("Sorted list:");
             pocoList.Sort();
-            foreach (var poco in pocoList)
-            {
-                Console.WriteLine(poco);
-            }
+            pocoList.ForEach(Console.WriteLine);
+            //pocoList.ForEach(x=>Console.WriteLine(x));
         }
 
         public void ParentMethod()

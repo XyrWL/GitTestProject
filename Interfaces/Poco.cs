@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    class Poco : IComparable
+    class Poco : IComparable //Plain Old Class(CLR/C#) Object
     {
         public string Name { get; private set; }
         public int Age { get; private set; }
